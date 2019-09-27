@@ -1,6 +1,6 @@
 # Introduction
 Contain smart contract files for 82-games on Tron. There are 2 contracts:
-1. `Game82Token.sol`: contract of game tickets, one ticket is one token
+1. `Game82Token.sol`: Contract of 82games vouchers (token)
 2. `Game82.sol`: Handle actual voucher purchases (minting) using `TRX`, as well as make predictions for games
 
 # Initial Steps
