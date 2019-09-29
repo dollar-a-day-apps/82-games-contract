@@ -1,0 +1,8 @@
+# Compiled contract json files
+build/
+
+# Apple
+.DS_Store
+
+# Environment variables
+.env

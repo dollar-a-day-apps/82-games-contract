@@ -52,7 +52,7 @@ contract Game82Token {
 
     _balances[_to] = _balances[_to].add(_value);
 
-    emit Mint(msg.sender, _to, _value);
+    emit Mint(_to, _value);
 
     return true;
   }
@@ -61,7 +61,7 @@ contract Game82Token {
   function burn(address _from, uint256 _value) external returns (bool) {
     require(msg.sender == logicContractAddress);
     require(_value > 0);
-    require(_address != address(0));
+    require(_from != address(0));
 
     _balances[_from] = 0;
 
