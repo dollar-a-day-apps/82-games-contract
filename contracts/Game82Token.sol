@@ -63,7 +63,7 @@ contract Game82Token {
     require(_value > 0);
     require(_from != address(0));
 
-    _balances[_from] = 0;
+    _balances[_from] = _balances[_from].sub(_value);
 
     return true;
   }
